@@ -331,10 +331,12 @@ footer {
 }
 
 /* Медиа-запрос для мобильных устройств */
+/* Медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
+    /* Стили для раздела "Главная" */
     #home {
         height: 300px;
-        padding: 20px; /* Добавим внутренние отступы для улучшенного отображения на мобильных устройствах */
+        padding: 20px;
     }
 
     #home h1 {
@@ -343,35 +345,72 @@ footer {
         padding: 20px;
     }
 
+    /* Стили для раздела "О нас" */
+    #about {
+        text-align: center;
+        padding: 20px;
+    }
+
     #about h2 {
         font-size: 24px;
-        padding: 10px;
+        color: #333;
     }
 
     #about p {
         font-size: 16px;
+        color: #555;
+    }
+
+    /* Стили для фотографий */
+    .destination {
+        display: flex;
+        align-items: center;
+        margin: 20px 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        transition: transform 0.3s;
+    }
+
+    .destination img {
+        max-width: 100%;
+        height: auto;
+        border: 3px solid #333;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+
+    /* Уменьшим размер шрифта в подвале */
+    footer p {
+        font-size: 16px;
+    }
+
+    /* Добавим внутренние отступы в навигационном меню для мобильных устройств */
+    header nav ul {
         padding: 10px;
     }
 
-    section img {
-        max-width: 100%;
-    }
-    
-    #destinations h2 {
-        font-size: 24px; /* Уменьшим размер шрифта заголовка "Места" */
+    /* Уменьшим размер шрифта и добавим отступы для ссылок в навигационном меню */
+    header nav ul li a {
+        font-size: 16px;
+        padding: 10px;
     }
 
-    .destination {
-        padding: 10px; /* Добавим внутренние отступы для улучшенного отображения на мобильных устройствах */
+    /* Уменьшим размер шрифта и добавим отступы для контактной информации */
+    #contact p {
+        font-size: 16px;
+        padding: 10px;
     }
 
-    .destination h3 {
-        font-size: 20px; /* Уменьшим размер шрифта заголовков интересных мест */
-        margin-bottom: 10px;
+    /* Уменьшим размер шрифта и добавим отступы для заголовка "Свяжитесь с нами" */
+    #contact h2 {
+        font-size: 20px;
+        padding: 10px;
     }
 
-    .destination p {
-        font-size: 16px; /* Уменьшим размер шрифта текста для лучшей читаемости на мобильных устройствах */
-        margin-bottom: 10px; /* Добавим внутренние отступы снизу для улучшей читаемости */
+    /* Уменьшим размер шрифта и добавим отступы для заголовка "Отзывы" */
+    #reviews h2 {
+        font-size: 24px;
+        padding: 10px;
     }
 }

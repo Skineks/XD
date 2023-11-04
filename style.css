@@ -99,36 +99,57 @@ body {
     color: red;
 }
 
-    /* Стили для раздела "О нас" */
-    #about {
-        position: relative;
-        background-image: url('css/img/2.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: #fff;
-    }
+/* Стили для раздела "О нас" */
+#about {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Добавим фоновый цвет для выделения раздела */
+}
 
-    #about h2 {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 28px;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 5px;
-    }
+#about h2 {
+    font-size: 28px;
+    color: #333; /* Увеличим размер шрифта и сделаем текст более читаемым */
+    margin-bottom: 10px; /* Добавим небольшой отступ снизу */
+}
 
-    #about p {
-        font-size: 18px;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-    }
+#about p {
+    font-size: 18px;
+    color: #555; /* Увеличим размер шрифта и сделаем текст более читаемым */
+    margin-bottom: 20px; /* Увеличим отступ снизу для лучшей читаемости */
+}
+
+/* Стили для фотографий */
+.destination.horizontal {
+    display: inline-block;
+    vertical-align: top; /* Горизонтальное выравнивание сверху */
+    margin: 0 20px; /* Небольшие отступы между фотографиями */
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+    background-color: #fff;
+    width: 500px; /* Задаем фиксированную ширину */
+    height: 400px; /* Задаем фиксированную высоту */
+}
+
+.destination.horizontal img {
+    max-width: 100%;
+    max-height: 100%; /* Максимальная высота для сохранения соотношения сторон */
+    width: 100%; /* Заполняем доступное пространство по ширине */
+    height: 100%; /* Заполняем доступное пространство по высоте */
+    border: 3px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Установите фиксированную ширину для каждой фотографии */
+.destination img {
+    width: 300px; /* Пример ширины. Измените на ваш выбор. */
+    margin: 0 10px; /* Добавьте горизонтальные отступы между фотографиями */
+}
+
+
+
 
 /* Стили для фото в разделе с местами */
 section img {

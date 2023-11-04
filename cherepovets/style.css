@@ -1,0 +1,169 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для навигационного меню */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Стили для раздела #home */
+#home {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 36px;
+}
+
+/* Стили для раздела #about */
+#about {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#about h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: #fff;
+}
+
+#about p {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Стили для раздела #destinations */
+#destinations {
+    text-align: center;
+    padding: 20px;
+}
+
+#destinations h2 {
+    font-size: 24px;
+}
+/* Стили для раздела #destinations и интересных мест в Белозерске */
+#destinations {
+    text-align: center;
+    padding: 30px;
+}
+
+#destinations h2 {
+    font-size: 24px;
+}
+
+/* Стили для интересных мест */
+.destination {
+    margin: 20px 0;
+    padding: 20px; /* Увеличим внутренние отступы для лучшей читаемости */
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+    background-color: #f7f7f7; /* Добавим фоновый цвет для контраста */
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination h3 {
+    font-size: 24px; /* Увеличим размер шрифта заголовка */
+    margin-bottom: 15px; /* Увеличим отступ снизу */
+    color: #333; /* Изменим цвет текста на более читаемый */
+}
+
+.destination p {
+    font-size: 18px; /* Увеличим размер шрифта текста */
+    color: #666; /* Изменим цвет текста для лучшей читаемости */
+    margin-bottom: 15px;
+}
+
+.destination img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.destination img:hover {
+    transform: scale(1.05);
+}
+
+/* Добавим рамку вокруг изображений для лучшей отделки */
+.destination img {
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+/* Стили для раздела контактов */
+#contact {
+    background-color: #071ea0ab;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#contact a {
+    color: #fff;
+}
+
+
+/* Стили для подвала */
+footer {
+    background-color: #5500f1;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    #home {
+        height: 300px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+}

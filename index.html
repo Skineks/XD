@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия по Вологодской области</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javascript.js"></script>
+
+    <style>
+        #home {
+       height: 500px; /* Задайте желаемую высоту раздела */
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       background-image: url('C:/Users/Администратор/OneDrive/Рабочий стол/site/css/img/1.jpg'); /* Здесь укажите путь к вашему изображению */
+       background-size: cover;
+       background-position: center;
+       text-align: center;
+   }
+
+   #about {
+       position: relative; /* Добавлено свойство position: relative; */
+       background-image: url('C:/Users/Администратор/OneDrive/Рабочий стол/site/css/img/2.jpg'); /* Здесь укажите путь к вашему изображению */
+       background-size: cover;
+       background-position: center;
+       height: 350px; /* Задайте желаемую высоту раздела */
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+   #about h2 {
+       position: absolute; /* Добавлено свойство position: absolute; */
+       top: 0px; /* Задайте желаемое положение текста "О нас" от верхнего края */
+       left: 50%; /* Центрируем текст горизонтально */
+       transform: translateX(-50%); /* Центрируем текст горизонтально */
+   }
+</style>
+</head>
+<body>
+</form>      
+        </div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Главная</a>
+                </li>
+                <li>
+                    <a href="#about">О нас</a>
+                </li>
+                <li>
+                    <a href="#destinations">Места</a>
+                </li>
+                <li>
+                    <a href="#contact">Контакты</a>
+                </li>
+                <li>
+                    <a href="#reviews">Отзывы</a>
+                </li>
+                <!-- Кнопка для открытия модального окна -->
+                <button id="openModal">Оплата тура</button>
+
+                <!-- Модальное окно -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeModal" class="close">&times;</span>
+                        <h2>Оплата тура</h2>
+                        <p>Здесь вы можете выбрать удобный способ оплаты тура.</p>
+                        <form id="paymentForm">
+                            <input type="text" id="cardNumber" name="cardNumber" required placeholder="Введите номер карты">
+                            <input type="text" id="cardName" name="cardName" required placeholder="Имя, как на карте">
+                            <input type="text" id="expiryDate" name="expiryDate" required placeholder="MM/YY">
+                            <input type="text" id="cvv" name="cvv" required placeholder="CVV-код (3 цифры)">
+                            <input type="submit" value="Оплатить">
+                        </form>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Путешествия по Вологодской области</h1>
+    </section>
+    
+    <section id="about">
+        <h2>О нас</h2>
+        <p>
+          Мы - команда путешественников, готовых поделиться с вами лучшими маршрутами, уникальными природными красотами и глубокой историей Вологодской области. Наши путешествия позволят вам открыть малоизвестные уголки этой замечательной местности, насладиться великолепными видами и ощутить дух приключений.
+        </p>
+    </section>
+
+    <section id="destinations">
+        <h2 style="text-align: center;">Места</h2>
+    
+        <section id="belozersk" class="places-section">
+            <a href="belozersk/belozersk.html">
+                <img src="css/img/3.jpg" alt="Фото Белозерск">
+            </a>
+            <div class="places-section-content">
+                <h3><a href="belozersk/belozersk.html">Белозерск</a></h3>
+                <p>
+                    Белозерск — это небольшой исторический город, расположенный в России, в Вологодской области. Город знаменит своим богатым культурным и историческим наследием. Основанный в 7 веке, Белозерск славится своими древними монастырями и храмами, такими как Кирилло-Белозерский монастырь, который был одним из важнейших культурных и религиозных центров в древней России.
+                </p>
+                <p>
+                    Город также находится в живописной природной местности, в окружении озер и лесов. Это создает отличные возможности для активного отдыха, рыбной ловли и прогулок на свежем воздухе.
+                </p>
+                <p>
+                    Белозерск является интересным местом для исторических и культурных экскурсий, и его архитектурное наследие предоставляет уникальную возможность погрузиться в богатую историю России.
+                </p>
+            </div>
+        </section>
+    
+        <section id="vologda" class="places-section">
+            <a href="vologda/vologda.html">
+                <img src="css/img/4.jpg" alt="Фото Вологда">
+            </a>
+            <div class="places-section-content">
+                <h3><a href="vologda/vologda.html">Вологда</a></h3>
+                <p>
+                    Вологда - это исторический город в северной части России, административный центр Вологодской области. Город славится своей богатой историей и культурным наследием, представленными разнообразными историческими памятниками. Среди них можно увидеть древние деревянные церкви, крепости из камня и здания, сохранившие архитектурный стиль прошлых веков.
+                </p>
+                <p>
+                    Вологда также известна своими мастерскими и музеями, посвященными народному искусству, что делает ее истинным центром культуры и творчества. Расположенная на берегу реки Волги, город предлагает живописные пейзажи и возможности для активного отдыха на природе.
+                </p>
+                <p>
+                    Кроме того, Вологда известна своими традиционными крафтовыми изделиями, такими как вологодское кружевоплетение и деревянные игрушки, что придает этому месту особый характер и уникальность.
+                </p>
+            </div>
+        </section>
+    
+        <section id="cherepovets" class="places-section">
+            <a href="cherepovets/cherepovets.html">
+                <img src="css/img/5.jpg" alt="Фото Череповцы">
+            </a>
+            <div class="places-section-content">
+                <h3><a href="cherepovets/cherepovets.html">Череповец</a></h3>
+                <p>
+                    Череповец - это крупный промышленный город в России, административный центр Череповецкого района и Вологодской области. Город расположен на реке Шексне и является важным промышленным и экономическим центром региона.
+                </p>
+                <p>
+                    Череповец известен своей металлургической и химической промышленностью, включая крупные предприятия, такие как Северсталь и Северное медицинское учреждение. Город также обладает развитой инфраструктурой, включая образовательные и культурные учреждения.
+                </p>
+                <p>
+                    Череповец несет историческое и культурное наследие, включая памятники архитектуры, такие как Спасо-Преображенский собор, музеи и художественные галереи.
+                </p>
+            </div>
+        </section>
+    </section>    
+        
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <p>Если у вас есть вопросы или вы хотите забронировать путешествие, свяжитесь с нами по адресу <a href="vecati4436@weirby.com">vecati4436@weirby.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Путешествия по Вологодской области</p>
+    </footer>
+</body>
+</html>

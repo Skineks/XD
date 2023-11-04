@@ -19,23 +19,6 @@
        text-align: center;
    }
 
-   #about {
-       position: relative; /* Добавлено свойство position: relative; */
-       background-image: url('css/img/2.jpg'); /* Здесь укажите путь к вашему изображению */
-       background-size: cover;
-       background-position: center;
-       height: 350px; /* Задайте желаемую высоту раздела */
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-   }
-
-   #about h2 {
-       position: absolute; /* Добавлено свойство position: absolute; */
-       top: 0px; /* Задайте желаемое положение текста "О нас" от верхнего края */
-       left: 50%; /* Центрируем текст горизонтально */
-       transform: translateX(-50%); /* Центрируем текст горизонтально */
-   }
 </style>
 </head>
 <body>
@@ -86,11 +69,21 @@
     </section>
     
     <section id="about">
-        <h2>О нас</h2>
+        <h2 style="text-align: center;">О нас</h2>
         <p>
-          Мы - команда путешественников, готовых поделиться с вами лучшими маршрутами, уникальными природными красотами и глубокой историей Вологодской области. Наши путешествия позволят вам открыть малоизвестные уголки этой замечательной местности, насладиться великолепными видами и ощутить дух приключений.
+            Мы - команда путешественников, готовых поделиться с вами лучшими маршрутами, уникальными природными красотами и глубокой историей Вологодской области. Наши путешествия позволят вам открыть малоизвестные уголки этой замечательной местности, насладиться великолепными видами и ощутить дух приключений.
         </p>
+        <div class="destination horizontal">
+            <img src="css/img/60.jpg" alt="Фото 1" />
+        </div>
+        <div class="destination horizontal">
+            <img src="css/img/40.jpg" alt="Фото 2" />
+        </div>
+        <div class="destination horizontal">
+            <img src="css/img/50.jpg" alt="Фото 3" />
+        </div>
     </section>
+    
 
     <section id="destinations">
         <h2 style="text-align: center;">Места</h2>

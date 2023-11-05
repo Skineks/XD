@@ -493,7 +493,20 @@ header nav ul li a {
     border-radius: 5px;
 }
 
+/* Убираем черную обводку вокруг кнопок в шапке */
+header nav ul li a {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none; /* Убираем границу */
+    border-radius: 5px;
+    text-decoration: none;
+}
 
+/* Добавляем стили при наведении на кнопки в шапке */
+header nav ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 /* Стили для планшетов (ширина экрана от 769px до 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {

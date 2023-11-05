@@ -272,6 +272,9 @@ nav ul li a {
     background-color: #f7f7f7;
     padding: 40px 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #reviews .section-title {
@@ -288,15 +291,21 @@ nav ul li a {
     padding: 20px;
     margin: 20px 0;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid transparent;
 }
 
 .review:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid #000;
 }
 
 .review h3 {
     font-size: 24px;
-    color: #333333;
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -306,8 +315,12 @@ nav ul li a {
     line-height: 1.4;
 }
 
+.review:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 #add-review-button {
-    background-color: #000000;
+    background-color: #000;
     color: #fff;
     font-size: 18px;
     padding: 10px 20px;
@@ -315,11 +328,13 @@ nav ul li a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #add-review-button:hover {
-    background-color: #000000;
+    background-color: #111;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Стили для подвала */
@@ -330,7 +345,6 @@ footer {
     padding: 10px 0;
 }
 
-/* Медиа-запрос для мобильных устройств */
 /* Медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
     /* Стили для раздела "Главная" */

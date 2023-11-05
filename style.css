@@ -493,20 +493,6 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-/* Улучшенные стили для краткого описания городов */
-.destination {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.destination img {
-    margin-bottom: 10px; /* Отступ между изображением и текстом */
-}
-
-.destination p {
-    font-size: 16px; /* Увеличим размер шрифта краткого описания */
-}
 
 
 /* Стили для планшетов (ширина экрана от 769px до 1024px) */

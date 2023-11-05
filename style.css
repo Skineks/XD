@@ -467,3 +467,54 @@ header nav ul li a {
 .destination p {
     font-size: 16px; /* Увеличим размер шрифта краткого описания */
 }
+/* Улучшенные стили для навигационного меню на мобильных устройствах */
+header nav ul {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 10px 0;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+/* Увеличим размер и стилизуем кнопку оплаты тура на мобильных устройствах */
+#openModal {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+/* Улучшенные стили для краткого описания городов */
+.destination {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.destination img {
+    margin-bottom: 10px; /* Отступ между изображением и текстом */
+}
+
+.destination p {
+    font-size: 16px; /* Увеличим размер шрифта краткого описания */
+}
+
+
+/* Стили для планшетов (ширина экрана от 769px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+/* Добавьте стили для планшетов по необходимости */
+}
+
+/* Стили для устройств с большими экранами (ширина экрана более 1024px) */
+@media (min-width: 1025px) {
+/* Добавьте стили для устройств с большими экранами по необходимости */
+}

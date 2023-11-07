@@ -255,13 +255,13 @@ nav ul li a {
 /* Стили для раздела контактов */
 #contact {
     background-color: #071ea0ab;
-    color: #fff;
+    color: #FFFFFF;
     text-align: center;
     padding: 20px 0;
 }
 
 #contact a {
-    color: #fff;
+    color: #FFFFFF;
 }
 
 /* Улучшенные стили для раздела "Отзывы" */
@@ -336,7 +336,7 @@ nav ul li a {
 
 /* Стили для подвала */
 footer {
-    background-color: #5500f1;
+    background-color: #FFFF;
     color: #fff;
     text-align: center;
     padding: 10px 0;

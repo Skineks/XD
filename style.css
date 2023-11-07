@@ -255,7 +255,7 @@ nav ul li a {
 /* Стили для раздела контактов */
 #contact {
     background-color: #071ea0ab;
-    color: #FFFFFF;
+    color: ##000;
     text-align: center;
     padding: 20px 0;
 }
@@ -337,7 +337,7 @@ nav ul li a {
 /* Стили для подвала */
 footer {
     background-color: #FFFFFF;
-    color: #fff;
+    color: #000;
     text-align: center;
     padding: 10px 0;
 }
